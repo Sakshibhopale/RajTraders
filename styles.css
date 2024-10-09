@@ -1,0 +1,105 @@
+.navbar {
+    background-color: white;
+}
+.nav-item {
+    margin: 0 15px;
+}
+/*.raj-traders {
+    font-family: "DM Serif Display", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: xx-large; 
+    line-height: 1.5;
+    }
+*/
+
+.search-container {
+    margin-left: auto; /* Automatically push search to the right */
+}
+.input-group {
+    width: 350px; /* Set a fixed width for the search bar */
+}
+.input-group-text {
+    background: transparent; /* Make background transparent for the icon */
+    border: none; /* Remove the border */
+    border-radius: 3px;
+}
+
+.carousel-item img {
+    height: 450px; /* Adjust the height as needed */
+    object-fit: cover; /* This will keep the aspect ratio of the images */
+}
+
+
+/* //gallery */
+  div.gallery img {
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+  }
+  
+  
+  .responsive {
+    display: flex;
+    float:left;
+    width: 14%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+
+  /* Carousel container */
+  .carousel-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Images wrapper */
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(25% * 7); /* Total width for 7 images */
+}
+
+/* Each image in carousel */
+.carousel-slide img {
+    width: 25%; /* Each image takes up 25% of the container */
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
